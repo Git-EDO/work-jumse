@@ -343,7 +343,10 @@ label.invalid-label {
   border-radius: 8px;
   flex-direction: column;
   background-color: #fff;
-  /* overflow: hidden; */
+  overflow: hidden;
+}
+.cto-btn-menu-link-wrapper .context-menu {
+  overflow: visible;
 }
 .context-menu-item {
   display: flex;
@@ -689,6 +692,7 @@ label.invalid-label {
   text-align: center;
 }
 .welcome-body p {
+  color: #687076;
   margin-top: 12px;
 }
 .welcome-body button {
@@ -1283,6 +1287,10 @@ label.invalid-label {
 
 /* === TOPICS === */
 
+.test-results-body .topics-head {
+  background: #f8f9fa;
+  border-radius: 8px;
+}
 .topics-head {
   display: flex;
   align-items: center;
@@ -1291,11 +1299,13 @@ label.invalid-label {
   background: #f8f9fa;
   padding: 20px 24px;
   margin-right: 32px;
+  border-radius: 8px;
 }
 .topics-head-text p {
   margin-top: 4px;
 }
 .topics-head-button button {
+  margin-right: 24px;
   width: 192px;
 }
 
@@ -1322,6 +1332,9 @@ label.invalid-label {
 
 .delete-popup-body {
   width: 400px;
+}
+.delete-popup-body .popup-form {
+  margin-top: 0;
 }
 
 /* === DEV WELCOME PAGE === */
