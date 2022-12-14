@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jumse</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-logo">Jumse</div>
+        <div class="header-user user-info">
+          <div
+            class="header-user-icon user-icon user-avatar user-avatar-middle-plus"
+          >
+            Н
+          </div>
+          <div class="header-user-data user-data">
+            <div class="header-user-name user-name body-s-strong">
+              Надежда Самойлова
+            </div>
+            <a
+              href="mailto:eivanov@jumse.ru"
+              class="header-user-email user-email"
+            >
+              n.samoylova@acme.corp
+            </a>
+          </div>
+          <div class="user-info-menu-wrapper context-menu-wrapper">
+            <ul class="user-info-menu context-menu body-s shadow-m">
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-results"
+              >
+                <a href="#">Результат тестирования </a>
+              </li>
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-quit"
+              >
+                <a href="#">Выйти </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-user-arrow">
+            <img src="./img/icons/arrow-down.svg" alt="icon" />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="test-results-content">
+          <div class="dev-test-results-body">
+            <h1>Тестирование завершено</h1>
+            <div class="dev-test-results-head">
+              <div class="dev-test-final-score">
+                <div class="dev-test-final-points">68</div>
+                <div class="dev-test-final-text body-s">баллов</div>
+              </div>
+              <div class="dev-test-final-topics-level">
+                <div class="dev-test-final-topics">
+                  <div class="dev-test-final-topics-text body-s">
+                    Пройденные темы
+                  </div>
+                  <h3 class="dev-test-final-topics-score body-s">
+                    <span>1</span>/<span>1</span>
+                  </h3>
+                </div>
+                <div class="dev-test-final-level">
+                  <div class="dev-test-final-level-text body-s">Уровень</div>
+                  <h3 class="dev-test-final-level-score">Middle+</h3>
+                </div>
+              </div>
+              <div class="dev-test-final-description body-m">
+                Неплохо, у вас есть твердые знания, соответствующие уровню
+                Middle. При этом чтобы соответствовать уровню Senior вам нужно
+                прокачать следующий список тем:
+              </div>
+            </div>
+            <div class="test-results-score">
+              <div class="test-results-score-text">
+                <h2>Результаты теста</h2>
+                <div class="test-results-score-date bosy-s">
+                  13 июля 2022 10:36
+                </div>
+              </div>
+              <div class="test-results-score-answers">
+                <div class="test-results-score-correct">
+                  <img src="./img/icons/checkmark.svg" alt="icon" />
+                  <span>1</span>
+                </div>
+              </div>
+            </div>
+            <div class="topics-head-text">
+              <h4>Демо-режим</h4>
+              <p class="body-s">
+                Вы находитесь в демо-режиме. Для тестирования доступна только
+                подтема «Типы данных» из «Общих тем». Свяжитесь с нами, чтобы
+                получить доступ ко всем темам.
+              </p>
+            </div>
+            <div class="test-results-accordeons-body">
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc1" id="acc1" />
+                <label for="acc1"> Общие темы </label>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Типы данных
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Garbage Collection
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc2" id="acc2" />
+                <label for="acc2"> Асинхронность </label>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Основы
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc3" id="acc3" />
+                <label for="acc3"> IoC-контейнеры </label>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Основы
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc4" id="acc4" />
+                <label for="acc4">
+                  Объектно-ориентированное программирование
+                </label>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Основы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Абстрактые классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Классы
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc5" id="acc5" />
+                <label for="acc5"> Операции с данными </label>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Алгоритмы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Коллекции
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Работа с памятью
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Структуры
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc6" id="acc6" />
+                <label for="acc6"> Многопоточность </label>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-locked"
+                  >
+                    <span>Доступно в полной версии</span>
+                    Основы
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">&#169; 2020–2022 JUMSE</footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

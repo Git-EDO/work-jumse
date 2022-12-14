@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jumse</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-logo">Jumse</div>
+        <div class="header-user user-info">
+          <div class="header-user-icon user-icon user-avatar user-avatar-admin">
+            E
+          </div>
+          <div class="header-user-data user-data">
+            <div class="header-user-name user-name body-s-strong cto-mark">
+              Евгений Иванов
+            </div>
+            <a
+              href="mailto:eivanov@jumse.ru"
+              class="header-user-email user-email"
+            >
+              eivanov@jumse.ru
+            </a>
+          </div>
+          <div class="user-info-menu-wrapper context-menu-wrapper">
+            <ul class="user-info-menu context-menu body-s shadow-m">
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-results"
+              >
+                <a href="#">Результат тестирования </a>
+              </li>
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-quit"
+              >
+                <a href="#">Выйти </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-user-arrow">
+            <img src="./img/icons/arrow-down.svg" alt="icon" />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="test-results-content">
+          <a href="#" class="test-results-link body-m">← Все сотрудники</a>
+          <div class="test-results-body">
+            <div class="test-results-head">
+              <div class="test-results-user user-info">
+                <div
+                  class="test-results-user-icon user-icon user-avatar user-avatar-void"
+                >
+                  E
+                </div>
+                <div class="test-results-user-data user-data">
+                  <h1 class="test-results-user-name user-name">
+                    Георгий Фурсенко
+                  </h1>
+                  <a
+                    href="mailto:g.fursenko@acme.corp"
+                    class="test-results-user-email user-email"
+                  >
+                    g.fursenko@acme.corp
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-user-btn">
+                <img src="./img/icons/big-points.svg" alt="points" />
+                <div class="test-results-btn-menu-wrapper context-menu-wrapper">
+                  <ul
+                    class="test-results-btn-menu context-menu body-s shadow-m"
+                  >
+                    <li
+                      class="test-results-btn-menu-item context-menu-item context-menu-item-results"
+                    >
+                      <a href="#">Ссылка на профиль</a>
+                    </li>
+                    <li
+                      class="test-results-btn-menu-item context-menu-item context-menu-item-repeat"
+                    >
+                      <a href="#">Повторное тестирование</a>
+                    </li>
+                    <li
+                      class="test-results-btn-menu-item context-menu-item context-menu-item-delete"
+                    >
+                      <a href="#">Удалить сотрудника</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <h2 class="test-results-points">26 баллов</h2>
+            <div class="test-results-row">
+              <div class="test-results-row-item results-row-void">
+                <span class="body-s">void</span>
+              </div>
+              <div class="test-results-row-item results-row-middle">
+                <span class="body-s">middle</span>
+              </div>
+              <div class="test-results-row-item results-row-middle-plus">
+                <span class="body-s">middle+</span>
+              </div>
+              <div class="test-results-row-item results-row-senior-">
+                <span class="body-s">senior-</span>
+              </div>
+              <div class="test-results-row-item results-row-senior">
+                <span class="body-s">senior</span>
+              </div>
+            </div>
+            <div class="test-results-score">
+              <div class="test-results-score-text">
+                <h2>Результаты теста</h2>
+                <div class="test-results-score-date bosy-s">
+                  13 июля 2022 10:36
+                </div>
+              </div>
+              <div class="test-results-score-answers">
+                <div class="test-results-score-correct">
+                  <img src="./img/icons/checkmark.svg" alt="icon" />
+                  <span>9</span>
+                </div>
+                <div class="test-results-score-wrong">
+                  <img src="./img/icons/crossmark.svg" alt="icon" />
+                  <span>9</span>
+                </div>
+              </div>
+            </div>
+            <div class="test-results-accordeons-body">
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc1" id="acc1" />
+                <label for="acc1">
+                  Объектно-ориентированное программирование
+                </label>
+                <div class="test-results-accordeon-answers">
+                  <div class="accordeon-score-correct">
+                    <img src="./img/icons/checkmark-mini.svg" alt="icon" />
+                    <span>4</span>
+                  </div>
+                  <div class="accordeon-score-wrong">
+                    <img src="./img/icons/crossmark-mini.svg" alt="icon" />
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Абстрактные классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-wrong"
+                  >
+                    Классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Делегаты
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Интерфейсы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Методы
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc2" id="acc2" />
+                <label for="acc2"> Язык Linq </label>
+                <div class="test-results-accordeon-answers">
+                  <div class="accordeon-score-correct">
+                    <img src="./img/icons/checkmark-mini.svg" alt="icon" />
+                    <span>1</span>
+                  </div>
+                  <div class="accordeon-score-wrong">
+                    <img src="./img/icons/crossmark-mini.svg" alt="icon" />
+                    <span>2</span>
+                  </div>
+                </div>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Абстрактные классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-wrong"
+                  >
+                    Классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Делегаты
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Интерфейсы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Методы
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc3" id="acc3" />
+                <label for="acc3"> Операции с данными </label>
+                <div class="test-results-accordeon-answers">
+                  <div class="accordeon-score-correct">
+                    <img src="./img/icons/checkmark-mini.svg" alt="icon" />
+                    <span>1</span>
+                  </div>
+                  <div class="accordeon-score-wrong">
+                    <img src="./img/icons/crossmark-mini.svg" alt="icon" />
+                    <span>5</span>
+                  </div>
+                </div>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Абстрактные классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-wrong"
+                  >
+                    Классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Делегаты
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Интерфейсы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Методы
+                  </a>
+                </div>
+              </div>
+              <div class="test-results-accordeon">
+                <input type="checkbox" name="acc4" id="acc4" />
+                <label for="acc4"> Форматирование и передача данных </label>
+                <div class="test-results-accordeon-answers">
+                  <div class="accordeon-score-correct">
+                    <img src="./img/icons/checkmark-mini.svg" alt="icon" />
+                    <span>2</span>
+                  </div>
+                  <div class="accordeon-score-wrong">
+                    <img src="./img/icons/crossmark-mini.svg" alt="icon" />
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="test-results-acc-content">
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Абстрактные классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-wrong"
+                  >
+                    Классы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Делегаты
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Интерфейсы
+                  </a>
+                  <a
+                    href="#"
+                    class="test-results-acc-content-item body-s acc-item-correct"
+                  >
+                    Методы
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">&#169; 2020–2022 JUMSE</footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

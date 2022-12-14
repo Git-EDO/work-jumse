@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jumse</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-logo">Jumse</div>
+        <div class="header-user user-info">
+          <div class="header-user-icon user-icon user-avatar user-avatar-admin">
+            E
+          </div>
+          <div class="header-user-data user-data">
+            <div class="header-user-name user-name body-s-strong cto-mark">
+              Евгений Иванов
+            </div>
+            <a
+              href="mailto:eivanov@jumse.ru"
+              class="header-user-email user-email"
+            >
+              eivanov@jumse.ru
+            </a>
+          </div>
+          <div class="user-info-menu-wrapper context-menu-wrapper">
+            <ul class="user-info-menu context-menu body-s shadow-m">
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-results"
+              >
+                <a href="#">Результат тестирования </a>
+              </li>
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-quit"
+              >
+                <a href="#">Выйти </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-user-arrow">
+            <img src="./img/icons/arrow-down.svg" alt="icon" />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="cto-console-content">
+          <div class="cto-console-title">
+            <div class="cto-console-title-employee">Сотрудники</div>
+            <button
+              class="cto-console-title-button primary-button primary-button-with-icon"
+            >
+              Пригласить
+            </button>
+          </div>
+          <div class="cto-console-body">
+            <div class="cto-console-row cto-head-row">
+              <div class="cto-name cto-title-name">Имя</div>
+              <div class="cto-invitation cto-title-invitation">
+                Приглашён &darr;
+              </div>
+              <div class="cto-status cto-title-status">Статус</div>
+              <div class="cto-grade cto-title-grade">Грейд</div>
+              <div class="cto-points cto-title-points">Баллы</div>
+              <div class="cto-btns cto-title-btns"></div>
+            </div>
+            <div class="cto-console-user-list">
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div
+                      class="user-icon user-avatar user-avatar-not-activated"
+                    >
+                      А
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">
+                        Александр Бакунин
+                      </div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        a.bakunin@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">Только что</div>
+                <div class="cto-status user-status">
+                  <span class="user-status-active tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade">
+                  <span class="user-grade-no-grade"></span>
+                </div>
+                <div class="cto-points cto-user-points">&mdash;</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div class="user-icon user-avatar user-avatar-void">Г</div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">
+                        Георгий Фурсенко
+                      </div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        g.fursenko@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  3 часа назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-passed tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-void"></span>
+                </div>
+                <div class="cto-points cto-user-points">26</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div class="user-icon user-avatar user-avatar-no-grade">
+                      Н
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">
+                        Надежда Самойлова
+                      </div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        n.samoylova@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  2 дня назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-active tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-no-grade"></span>
+                </div>
+                <div class="cto-points cto-user-points">&mdash;</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div class="user-icon user-avatar user-avatar-no-grade">
+                      Г
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">Георгий Иванов</div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        g.ivanov@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  Неделю назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-failed tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-no-grade"></span>
+                </div>
+                <div class="cto-points cto-user-points">&mdash;</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div
+                      class="user-icon user-avatar user-avatar-not-activated"
+                    >
+                      А
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">
+                        Антон Захарченко
+                      </div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        a.zakharchenko@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  3 недели назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-activation-timeout tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-no-grade"></span>
+                </div>
+                <div class="cto-points cto-user-points">&mdash;</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div class="user-icon user-avatar user-avatar-senior">
+                      К
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">Ксения Лещ</div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        k.leshth@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  Месяц назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-passed tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-senior"></span>
+                </div>
+                <div class="cto-points cto-user-points">84</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div class="user-icon user-avatar user-avatar-middle-plus">
+                      Н
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">Никита Павлов</div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        n.pavlov@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  3 месяца назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-passed tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-middle-plus"></span>
+                </div>
+                <div class="cto-points cto-user-points">69</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cto-console-row cto-user-row">
+                <div class="cto-name cto-user-name">
+                  <div class="header-user user-info">
+                    <div class="user-icon user-avatar user-avatar-middle">
+                      Н
+                    </div>
+                    <div class="header-user-data user-data">
+                      <div class="user-name body-s-strong">Олег Васильев</div>
+                      <a href="mailto:eivanov@jumse.ru" class="user-email">
+                        o.vasyliev@acme.corp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cto-invitation cto-user-invitation">
+                  4 месяцев назад
+                </div>
+                <div class="cto-status user-status">
+                  <span class="user-status-passed tag"></span>
+                </div>
+                <div class="cto-grade cto-user-grade user-grade">
+                  <span class="user-grade-middle"></span>
+                </div>
+                <div class="cto-points cto-user-points">85</div>
+                <div class="cto-btns cto-user-btns">
+                  <div class="cto-user-btn">
+                    <img src="./img/icons/points.svg" alt="points" />
+                    <div class="cto-btn-menu-wrapper context-menu-wrapper">
+                      <ul class="cto-btn-menu context-menu body-s shadow-m">
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-results"
+                        >
+                          <a href="#">Ссылка на профиль</a>
+                        </li>
+                        <li
+                          class="cto-btn-menu-item context-menu-item context-menu-item-delete"
+                        >
+                          <a href="#">Удалить сотрудника</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popups">
+            <div class="popup invitation-popup">
+              <div class="popup-body invitation-popup-body">
+                <h3 class="popup-title">Приглашение сотрудника</h3>
+                <div class="popup-subtitle body-s">
+                  Отправим ссылку на тестирование. Будет действовать 4 часа.
+                </div>
+                <form class="popup-form">
+                  <input
+                    class="input-default"
+                    type="text"
+                    placeholder="Имя"
+                    name="invitation-name"
+                  />
+                  <label for="invitation-name" class="invalid-label"
+                    >Введите имя сотрудника</label
+                  >
+                  <input
+                    class="input-default"
+                    type="text"
+                    placeholder="Фамилия"
+                    name="invitation-surname"
+                  />
+                  <label for="invitation-surname" class="invalid-label body-s"
+                    >Введите фамилию сотрудника</label
+                  >
+                  <input
+                    class="input-default"
+                    type="email"
+                    placeholder="Почта"
+                    name="invitation-email"
+                  />
+                  <label for="invitation-email" class="invalid-label body-s"
+                    >Введите корректный email сотрудника</label
+                  >
+                  <div class="popup-form-buttons">
+                    <button class="secondary-button">Отмена</button>
+                    <button class="primary-button">Пригласить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="popup contacts-popup">
+              <div class="popup-body contacts-popup-body">
+                <h3 class="popup-title">Связь с нами</h3>
+                <form class="popup-form">
+                  <input
+                    class="input-default"
+                    type="email"
+                    placeholder="Email"
+                    name="contacts-email"
+                  />
+                  <label for="contacts-email" class="invalid-label body-s"
+                    >Введите корректный email сотрудника</label
+                  >
+                  <label for="contacts-email" class="comment-label"
+                    >Пришлём ответ на ваше сообщение</label
+                  >
+                  <textarea
+                    class="body-s input-default"
+                    name="contacts-comment"
+                    id="contacts-comment"
+                    placeholder="Комментарий"
+                  ></textarea>
+                  <div class="popup-form-buttons">
+                    <button class="secondary-button">Отмена</button>
+                    <button class="primary-button">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="popup delete-popup active">
+              <div class="popup-body delete-popup-body">
+                <h3 class="popup-title">Удалить ссылку?</h3>
+                <div class="popup-subtitle body-s">
+                  Текущая ссылка будет удалена.
+                </div>
+                <form class="popup-form">
+                  <div class="popup-form-buttons">
+                    <button class="secondary-button">Отмена</button>
+                    <button class="primary-button primary-button-delete">
+                      Удалить
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">&#169; 2020–2022 JUMSE</footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

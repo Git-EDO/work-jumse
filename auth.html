@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jumse</title>
+  </head>
+  <body>
+    <div class="auth-content">
+      <div class="auth-body">
+        <div class="auth-text">
+          <div class="auth-logo">Jumse</div>
+          <h2 class="auth-title">Вход для руководителей отделов разработки</h2>
+          <div class="auth-subtitle body-s">
+            Нет аккаунта? <a href="#">Отправьте заявку</a> на демо-доступ
+          </div>
+        </div>
+        <form class="auth-form">
+          <input
+            class="input-default body-s"
+            type="email"
+            placeholder="Почта"
+          />
+          <input
+            class="input-default body-s auth-input"
+            type="password"
+            placeholder="Пароль"
+          />
+          <button type="submit" class="primary-button auth-button">
+            Войти
+          </button>
+          <div class="auth-form-divider">
+            <span></span>
+            <p>или</p>
+            <span></span>
+          </div>
+          <button type="button" class="secondary-button">
+            Войти через Google
+          </button>
+        </form>
+      </div>
+      <div class="auth-help-button">
+        <div class="auth-help-icon">
+          ?
+          <div class="auth-help-menu-wrapper context-menu-wrapper">
+            <ul class="auth-help-menu context-menu body-s shadow-m">
+              <li
+                class="auth-help-menu-item context-menu-item context-menu-item-help"
+              >
+                <a href="#">Справка</a>
+              </li>
+              <li
+                class="auth-help-menu-item context-menu-item context-menu-item-text"
+              >
+                <a href="#">Написать нам</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
