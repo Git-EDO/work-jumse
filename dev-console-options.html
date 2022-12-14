@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Jumse</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-logo">Jumse</div>
+        <div class="header-user user-info">
+          <div
+            class="header-user-icon user-icon user-avatar user-avatar-no-grade"
+          >
+            Н
+          </div>
+          <div class="header-user-data user-data">
+            <div class="header-user-name user-name body-s-strong">
+              Надежда Самойлова
+            </div>
+            <a
+              href="mailto:eivanov@jumse.ru"
+              class="header-user-email user-email"
+            >
+              n.samoylova@acme.corp
+            </a>
+          </div>
+          <div class="user-info-menu-wrapper context-menu-wrapper">
+            <ul class="user-info-menu context-menu body-s shadow-m">
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-results"
+              >
+                <a href="#">Результат тестирования </a>
+              </li>
+              <li
+                class="user-info-menu-item context-menu-item context-menu-item-quit"
+              >
+                <a href="#">Выйти </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-user-arrow">
+            <img src="./img/icons/arrow-down.svg" alt="icon" />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="dev-console-content">
+          <div class="dev-console-state">
+            <div class="dev-console-statement">
+              <h4 class="dev-console-status">Идет тестирование</h4>
+              <div class="dev-console-timer">03:12:03</div>
+            </div>
+            <div class="dev-console-answers">
+              <div class="dev-console-answers-questions body-s">
+                Вы ответили на <span>4</span> из <span>10</span> вопросов
+              </div>
+              <div class="dev-console-answers-bugs body-s">
+                Описали <span>4</span> бага
+              </div>
+            </div>
+            <button class="primary-button dev-console-button">
+              Завершить тестирование
+            </button>
+          </div>
+          <div class="dev-console-body">
+            <div class="dev-console-code"></div>
+            <div class="dev-console-sidepanel">
+              <div class="dev-console-sidepanel-item">
+                <div class="dev-console-sidepanel-text body-s">Main.cs</div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-bugs">
+                    <img src="./img/icons/bug.svg" alt="icon" />
+                    <span>2</span>
+                  </div>
+                  <div class="dev-console-sidepanel-questions">
+                    <span class="question-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dev-console-sidepanel-item active">
+                <div class="dev-console-sidepanel-text body-s">
+                  JuniorDeveloper.cs
+                </div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-bugs">
+                    <img src="./img/icons/bug.svg" alt="icon" />
+                    <span>1</span>
+                  </div>
+                  <div class="dev-console-sidepanel-questions">
+                    <span class="question-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dev-console-sidepanel-item">
+                <div class="dev-console-sidepanel-text body-s">Main2.cs</div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-bugs">
+                    <img src="./img/icons/bug.svg" alt="icon" />
+                    <span>1</span>
+                  </div>
+                  <div class="dev-console-sidepanel-questions">
+                    <span class="question-solved">?</span>
+                    <span class="question-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dev-console-sidepanel-item">
+                <div class="dev-console-sidepanel-text body-s">Filename</div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-bugs"></div>
+                  <div class="dev-console-sidepanel-questions"></div>
+                </div>
+              </div>
+              <div class="dev-console-sidepanel-item">
+                <div class="dev-console-sidepanel-text body-s">Notebook.cs</div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-bugs"></div>
+                  <div class="dev-console-sidepanel-questions"></div>
+                </div>
+              </div>
+              <div class="dev-console-sidepanel-item">
+                <div class="dev-console-sidepanel-text body-s">
+                  SeniorDeveloper.cs
+                </div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-questions">
+                    <span class="question-not-solved">?</span>
+                    <span class="question-not-solved">?</span>
+                  </div>
+                </div>
+              </div>
+              <div class="dev-console-sidepanel-item">
+                <div class="dev-console-sidepanel-text body-s">Test.cs</div>
+                <div class="dev-console-sidepanel-icons">
+                  <div class="dev-console-sidepanel-questions">
+                    <span class="question-not-solved">?</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popups">
+            <div class="popup answer-popup">
+              <div class="popup-body answer-popup-body">
+                <h3 class="popup-title">Ответьте на вопрос</h3>
+                <form class="popup-form">
+                  <input
+                    class="input-default"
+                    type="text"
+                    placeholder="Введите ответ"
+                    name="answer"
+                  />
+                  <div class="popup-form-buttons">
+                    <button class="secondary-button">Отмена</button>
+                    <button class="primary-button">Ответить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="popup options-answers-popup active">
+              <div class="popup-body options-answers-popup-body">
+                <div class="options-answers-popup-subtitle body-s">
+                  JuniorDeveloper.cs
+                </div>
+                <h3 class="popup-title">Какая ошибка в этой строке?</h3>
+                <form class="popup-form">
+                  <div class="popup-form-code"></div>
+                  <div class="popup-form-options body-s">
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt1" name="q1" />
+                      <label for="opt1">
+                        <span>params</span> недопустим в этом контексте</label
+                      >
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt2" name="q1" />
+                      <label for="opt2">
+                        Выражение типа <span>тип</span> недопустимо в
+                        последующем предложении<span>from</span> в выражении
+                        запроса с исходным типом <span>тип</span> . Ошибка
+                        определения типа при вызове в <span>метод</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt3" name="q1" />
+                      <label for="opt3">
+                        В области действия оператора
+                        <span>goto</span> отсутствует метка <span>метка</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt4" name="q1" />
+                      <label for="opt4">
+                        Дерово выражения не может содержать небезопасные
+                        операции над указателями
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt5" name="q1" checked />
+                      <label for="opt5">
+                        Аргумент типа <span>тип</span> не применим для
+                        атрибута<span>DefaultValue</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt6" name="q1" />
+                      <label for="opt6">
+                        Атрибут <span>IndexerName</span> применим только в
+                        индексаторе, который не является явным объявлением члена
+                        интерфейса
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt7" name="q1" />
+                      <label for="opt7">
+                        Адрес локальной переменной и ее членов не может быть
+                        получен или использован в анонимном методе или
+                        лямбда-выражении
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt8" name="q1" />
+                      <label for="opt8">
+                        Внутри анонимного метода или лямбда-выражения нельзя
+                        использовать оператор <span>yield</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt9" name="q1" />
+                      <label for="opt9">
+                        Атрибут атрибут допустим только в классах, производных
+                        от <span>System.Attribute</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt10" name="q1" />
+                      <label for="opt10">
+                        <span>type</span> не содержит конструктор, принмиающий
+                        аргументы <span>number</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt11" name="q1" />
+                      <label for="opt11">
+                        Аргумент <span>число</span> не должен передаваться с
+                        ключевым словом <span>ключевое слово</span>
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt12" name="q1" />
+                      <label for="opt12">
+                        В разделяемых объявлениях <span>тип</span> имена
+                        параметров типов и их порядок должны быть одинаковыми
+                      </label>
+                    </div>
+                    <div class="popup-form-option">
+                      <input type="radio" id="opt13" name="q1" />
+                      <label for="opt13">
+                        Буферы фиксированного размера должны иметь ненулевую
+                        длину
+                      </label>
+                    </div>
+                  </div>
+                  <div class="popup-form-buttons">
+                    <button class="secondary-button">Отмена</button>
+                    <button class="primary-button">Ответить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="popup problem-popup">
+              <div class="popup-body problem-popup-body">
+                <h3 class="popup-title">Проблема на сайте</h3>
+                <form class="popup-form">
+                  <input
+                    class="input-default"
+                    type="email"
+                    placeholder="Email"
+                    name="problem-email"
+                  />
+                  <label for="problem-email" class="invalid-label body-s"
+                    >Введите корректный email сотрудника</label
+                  >
+                  <label for="problem-email" class="comment-label"
+                    >Пришлём ответ на ваше сообщение</label
+                  >
+                  <textarea
+                    class="body-s input-default"
+                    name="problem-comment"
+                    id="problem-comment"
+                    placeholder="Комментарий"
+                  ></textarea>
+                  <div class="form-input-file">
+                    <input
+                      type="file"
+                      id="problem-picture-input"
+                      name="problem-picture"
+                    />
+                    <label
+                      for="problem-picture-input"
+                      class="body-s problem-picture-input-label"
+                      >Прикрепить изображение</label
+                    >
+                  </div>
+                  <div class="popup-form-buttons">
+                    <button class="secondary-button">Отмена</button>
+                    <button class="primary-button">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">&#169; 2020–2022 JUMSE</footer>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
