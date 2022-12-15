@@ -147,7 +147,6 @@ h4 {
   background: #006adc;
   border-radius: 8px;
   padding: 10px 16px;
-  width: 100%;
 
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -184,7 +183,6 @@ h4 {
   padding: 10px 16px;
   background: #f1f3f5;
   border-radius: 8px;
-  width: 100%;
 
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -354,7 +352,6 @@ label.invalid-label {
   padding: 10px 10px 10px 40px;
   min-width: 240px;
   cursor: pointer;
-  /* border-bottom: 1px solid #eceef0; */
   position: relative;
 }
 .context-menu-item:last-child {
@@ -456,6 +453,76 @@ label.invalid-label {
   border-top: 8px solid #fff;
 }
 
+/* TOAST MESSAGES */
+
+.toast-messages {
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px;
+
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.toast-message {
+  display: flex;
+  width: 320px;
+  padding: 12px;
+  border-radius: 6px;
+}
+.toast-message:not(:first-child) {
+  margin-top: 26px;
+}
+.toast-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toast-icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toast-text {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #11181c;
+
+  margin-left: 10px;
+}
+.toast-success-message {
+  background: #f2fcf5;
+}
+.toast-success-message .toast-icon {
+  background: #ddf3e4;
+}
+.toast-success-message .toast-icon-circle {
+  background: #b4dfc4;
+}
+.toast-error-message {
+  background: #fff8f8;
+}
+.toast-error-message .toast-icon {
+  background: #ffe5e5;
+}
+.toast-error-message .toast-icon-circle {
+  background: #f9c6c6;
+}
+
 /* STATUS */
 
 .user-status span {
@@ -464,6 +531,9 @@ label.invalid-label {
 .user-status span::after {
   padding: 2px 10px;
   border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .user-status-active::after {
   content: 'проходит тест';
@@ -568,7 +638,11 @@ label.invalid-label {
   margin-top: 12px;
 }
 .auth-button {
+  width: 100%;
   margin-top: 12px;
+}
+.auth-google-button {
+  width: 100%;
 }
 .auth-form-divider {
   position: relative;
@@ -621,10 +695,14 @@ label.invalid-label {
 .auth-help-menu-wrapper {
   bottom: 0;
   right: 0;
+  width: 200px;
 }
 .auth-help-menu {
   margin-top: 0px;
   margin-bottom: 60px;
+}
+.auth-help-menu-wrapper .context-menu-item:last-child {
+  border-top: none;
 }
 
 /* === HEADER & FOOTER === */
@@ -697,7 +775,6 @@ label.invalid-label {
 }
 .welcome-body button {
   margin-top: 20px;
-  width: 120px;
   margin: 20px auto 0 auto;
 }
 
@@ -725,9 +802,6 @@ label.invalid-label {
   font-size: 28px;
   line-height: 135%;
   color: #11181c;
-}
-.cto-console-title-button {
-  width: 121px;
 }
 .cto-console-body {
   margin-top: 20px;
@@ -761,6 +835,7 @@ label.invalid-label {
   min-height: 56px;
 }
 .cto-user-row:hover {
+  border-radius: 8px;
   background: #f8f9fa;
 }
 .cto-name {
@@ -928,7 +1003,7 @@ label.invalid-label {
   margin-top: 64px;
   background-color: #fff;
   border-radius: 12px;
-  padding: 20px 24px;
+  padding: 20px 24px 12px;
 
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -948,17 +1023,12 @@ label.invalid-label {
 .popup-form-buttons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 24px;
-
-  padding-top: 12px;
+  padding: 12px 24px 0;
+  margin: 24px -24px 0 -24px;
   border-top: 1px solid #eceef0;
 }
 .popup-form-buttons .secondary-button {
-  width: 79px;
   margin-right: 10px;
-}
-.popup-form-buttons .primary-button {
-  width: 121px;
 }
 
 /* === TEST RESULTS === */
@@ -1306,7 +1376,7 @@ label.invalid-label {
 }
 .topics-head-button button {
   margin-right: 24px;
-  width: 192px;
+  min-width: 192px;
 }
 
 /* === CONTACTS-POPUP === */
@@ -1354,7 +1424,6 @@ label.invalid-label {
 }
 .dev-welcome-body button {
   margin: 32px auto 0;
-  width: 252px;
 }
 .dev-welcome-text {
   display: flex;
@@ -1421,15 +1490,8 @@ label.invalid-label {
   line-height: 150%;
   color: #18794e;
 }
-.dev-console-answers {
-}
-.dev-console-answers-questions {
-}
 .dev-console-answers-bugs {
   margin-top: 6px;
-}
-.dev-console-button {
-  width: 191px;
 }
 
 .dev-console-body {
@@ -1462,6 +1524,9 @@ label.invalid-label {
 
   border-left: 3px solid transparent;
   padding: 12px;
+}
+.dev-console-sidepanel-item:not(:last-child) {
+  border-bottom: 1px solid #eceef0;
 }
 .dev-console-sidepanel-item.active {
   background-color: #f8f9fa;
@@ -1522,7 +1587,7 @@ label.invalid-label {
   color: #fff;
 }
 .dev-console-sidepanel-questions span:not(:first-child) {
-  margin-left: 2px;
+  margin-left: 4px;
 }
 .question-solved {
   opacity: 1;
@@ -1536,12 +1601,6 @@ label.invalid-label {
 .options-answers-popup-body {
   width: 960px;
 }
-.options-answers-popup {
-}
-.options-answers-popup-body {
-}
-.options-answers-popup-subtitle {
-}
 .popup-form-code {
   background: #151718;
   border-radius: 4px;
@@ -1553,8 +1612,11 @@ label.invalid-label {
   flex-direction: column;
 }
 .popup-form-option {
-  margin-top: 4px;
   display: flex;
+  padding: 4px 0;
+}
+.popup-form-option:not(:first-child) {
+  margin-top: 4px;
 }
 .popup-form-option label {
   position: relative;
@@ -1628,8 +1690,16 @@ label.invalid-label {
   justify-content: center;
   align-items: center;
 }
-.dev-test-final-score {
+.dev-test-results-wrapper {
   margin-top: 32px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+}
+.dev-test-final-score {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1653,7 +1723,7 @@ label.invalid-label {
   display: flex;
   width: 320px;
   justify-content: space-between;
-  margin-top: 16px;
+  padding-top: 16px;
 }
 .dev-test-final-topics {
   display: flex;
@@ -1689,4 +1759,11 @@ label.invalid-label {
   margin-top: 24px;
   max-width: 520px;
   text-align: center;
+}
+
+@media (max-width: 1160px) {
+  body {
+    min-width: 1160px;
+    overflow-x: auto;
+  }
 }
