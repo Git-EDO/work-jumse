@@ -757,7 +757,7 @@ label.invalid-label {
   justify-content: space-between;
 
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .welcome-content {
   display: flex;
@@ -832,6 +832,7 @@ label.invalid-label {
   color: #11181c;
 }
 .cto-user-row {
+  padding-left: 8px;
   min-height: 56px;
 }
 .cto-user-row:hover {
