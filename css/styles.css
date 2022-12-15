@@ -14,7 +14,7 @@ body {
   background: #f1f3f5;
 
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 a {
@@ -1253,7 +1253,7 @@ label.invalid-label {
   opacity: 0;
   visibility: hidden;
 
-  transition: 0.3s linear;
+  transition: max-height 0.3s linear, visibility 0.3 linear 0.2;
 }
 .test-results-accordeon input:checked ~ .test-results-acc-content {
   max-height: 100vh;
@@ -1266,8 +1266,14 @@ label.invalid-label {
 .test-results-accordeon input:checked ~ label::after {
   transform: rotate(180deg);
 }
-.test-results-acc-content-item {
+.test-results-accordeon
+  input:checked
+  ~ .test-results-acc-content
+  .test-results-acc-content-item {
   position: relative;
+}
+.test-results-acc-content-item {
+  position: absolute;
   padding: 14px 68px;
   border-bottom: 1px solid #eceef0;
 }
